@@ -51,15 +51,16 @@ classDiagram
     }
 
     %% RELACIONES ACTUALIZADAS
-    Usuario <|-- Administrador : es_un
-    Usuario "1" -- "*" Vehiculo : posee
-    Usuario "1" o-- "1" Membresia : adquiere
+    Usuario <|-- Administrador : 
+    Usuario "1" -- "*" Vehiculo : 
+    Usuario "1" o-- "1" Membresia : 
     
     %% UNIÓN TOTAL: Composición (El puesto es parte del Vehículo)
-    Vehiculo "1" *-- "1" Puesto : objeto_asignado
+    Vehiculo "1" *-- "1" Puesto : 
     
     %% FLUJO OPERATIVO
-    Usuario ..> RegistroAcceso : valida_con_cedula
-    RegistroAcceso ..> Vehiculo : verifica_parqueo
-    Membresia ..> Pago : genera
+    Usuario ..> RegistroAcceso : 
+    RegistroAcceso ..> Vehiculo : 
+    Membresia ..> Pago : 
+
     ```
